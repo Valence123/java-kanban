@@ -24,3 +24,4 @@ class InMemoryHistoryManagerTest {
         historyManager.remove(1);
         assertTrue(historyManager.getHistory().isEmpty());
     }
+}

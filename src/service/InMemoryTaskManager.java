@@ -4,11 +4,8 @@ import model.Task;
 import model.Epic;
 import model.Subtask;
 
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class InMemoryTaskManager implements TaskManager {
     private int taskIdCounter = 1;
@@ -32,7 +29,7 @@ public class InMemoryTaskManager implements TaskManager {
     @Override
     public List<Task> getHistory() {
 
-        return historyManager.getHistory();
+        return new ArrayList<>(getHistory());
     }
 
     @Override

@@ -57,11 +57,6 @@ class TaskTest {
         assertNotEquals(task.hashCode(), anotherTask.hashCode());
     }
 
-    public void testToString() {
-        String expectedString = "Название='Test task', ID=1, Статус='NEW'";
-        assertEquals(expectedString, task.toString());
-    }
-
     @Test
     void testTaskEqualityById() {
         Task task1 = new Task(1, "Task 1");
